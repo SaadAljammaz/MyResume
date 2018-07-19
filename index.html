@@ -44,6 +44,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .eduCard {
   border-radius: 25px;
 }
+.softskills {
+  background-image: url("images/softskills.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
 .programming {
   background-image: url("images/Programming.jpg");
   background-repeat: no-repeat;
@@ -66,6 +71,11 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 }
 .contact {
   background-image: url("images/contact.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
+.references {
+  background-image: url("images/References.jpg");
   background-repeat: no-repeat;
   background-size:cover
 }
@@ -141,7 +151,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- About section -->
   <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 aboutme" id="about">
     <h2><b>About Me</b></h2>
-    <img src="images/me.jpg" alt="Avatar" class="w3-circle w3-margin-right" style="width:20%">
+    <img src="images/gentleman.png" alt="Avatar" class="w3-circle w3-margin-right" style="width:20%">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Saad Aljammaz</h4>
       <p>I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field.
@@ -150,7 +160,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Soft Skills section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="Soft_skills">
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large softskills" id="Soft_skills">
     <div class="w3-content" style="max-width:100%">
       <h2 class="w3-center"><b>Soft Skills</b></h2>
       <div class="slideshow-container">
@@ -245,9 +255,10 @@ function showSlides(n) {
 
   <!-- Education section -->
   <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large education w3-opacity-min" id="Education">
-    <div class="w3-content w3-animate-left w3-text-white" style="max-width:600px">
+    <div class="w3-content w3-animate-left w3-text-white" style="max-width:100%">
       <h2 class="w3-center"><b>Education</b></h2>
-        <div class="w3-card-4 w3-margin w3-light-grey eduCard" style="width:50%">
+        <center>
+          <div class="w3-card-4 w3-margin w3-light-grey eduCard" style="width:25%">
           <div class="w3-display-container w3-text-white">
             <img src="images/KSU_Logo.png" alt="Lights" style="width:100%">
           </div>
@@ -258,11 +269,12 @@ function showSlides(n) {
               <p class="w3-margin w3-center">computer science student at King Saud University. Currently, in the last semester in college with GPA *.** out of 5</p>
             </div>
           </div>
+          </div>
           <h1>
             <a href="" class="typewrite w3-text-grey" data-period="2000" data-type='[ "Hi, Im Saad.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'><span class="wrap"></span>
             </a>
           </h1>
-        </div>
+        </center>
     </div>
   </div>
 
@@ -335,21 +347,23 @@ function showSlides(n) {
   </div>
 
   <!-- References section -->
-  <div class="w3-container w3-grey w3-center w3-padding-32" id="References">
+  <div class="w3-container w3-grey w3-center w3-padding-32 references" id="References">
     <h2><b>References</b></h2>
     <div class="w3-content w3-center" style="max-width:600px">
       <div class="w3-container">
-        <div class="w3-card-4" style="width:70%">
-          <header class="w3-container w3-light-grey">
-            <h3>Mishari Almishari</h3>
-          </header>
-          <div class="w3-container">
-            <hr>
-            <img src="images/Mishari-Almishari.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-            <p>Assistant Professor king saud university • Computer Science mialmishari@ksu.edu.sa</p><br>
+        <center>
+          <div class="w3-card-4" style="width:70%">
+            <header class="w3-container w3-light-grey">
+              <h3>Mishari Almishari</h3>
+            </header>
+            <div class="w3-container">
+              <hr>
+              <img src="images/Mishari-Almishari.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+              <p>Assistant Professor king saud university • Computer Science mialmishari@ksu.edu.sa</p><br>
+            </div>
+            <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
           </div>
-          <button class="w3-button w3-block w3-dark-grey">+ Connect</button>
-        </div>
+        </center>
       </div>
     </div>
   </div>
