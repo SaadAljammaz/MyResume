@@ -41,11 +41,23 @@ $(document).ready(function(){
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
 .w3-third img:hover{opacity: 1}
+.buttons{
+  font-size: 18px;
+}
 .eduCard {
   border-radius: 25px;
 }
+.imagesborder {
+  border-radius: 50px;
+  border-style: dotted; 
+}
 .softskills {
   background-image: url("images/softskills.jpg");
+  background-repeat: no-repeat;
+  background-size:cover
+}
+.sidebar {
+  background-image: url("images/sidebar.jpg");
   background-repeat: no-repeat;
   background-size:cover
 }
@@ -55,7 +67,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   background-size:cover
 }
 .aboutme {
-  background-image: url("images/dark.png");
+  background-image: url("images/aboutme.jpg");
   background-repeat: no-repeat;
   background-size:cover
 }
@@ -83,17 +95,24 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <h3 class="w3-padding-64 w3-center"><b>SAAD<br>ALJAMMAZ</b></h3>
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top sidebar" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center w3-text-light-grey"><b>SAAD<br>ALJAMMAZ</b></h3>&nbsp
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
-
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a> 
-  <a href="#Soft_skills" onclick="w3_close()" class="w3-bar-item w3-button">SOFT SKILLS</a> 
-  <a href="#Programming_Skills" onclick="w3_close()" class="w3-bar-item w3-button">PROGRAMMING SKILLS</a> 
-  <a href="#Education" onclick="w3_close()" class="w3-bar-item w3-button">EDUCATION</a> 
-  <a href="#Courses" onclick="w3_close()" class="w3-bar-item w3-button">COURSES</a> 
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a> 
-  <a href="#References" onclick="w3_close()" class="w3-bar-item w3-button">REFERENCES</a> 
+  <img src="images/icon.png">
+  <a href="#about" onclick="w3_close()" class="buttons">&nbsp About me</a><br>&nbsp
+  <img src="images/skills.png">
+  <a href="#Soft_skills" onclick="w3_close()" class="buttons">&nbsp Soft skills</a><br>&nbsp
+  <img src="images/programming.png"> 
+  <a href="#Programming_Skills" onclick="w3_close()" class="buttons">&nbsp Programming skills</a><br>&nbsp
+  <img src="images/Education.png">
+  <a href="#Education" onclick="w3_close()" class="buttons">&nbsp Education</a><br>&nbsp
+  <img src="images/courses.png">
+  <a href="#Courses" onclick="w3_close()" class="buttons">&nbsp Courses</a><br>&nbsp
+  <img src="images/contact.png">
+  <a href="#contact" onclick="w3_close()" class="buttons">&nbsp Contact</a><br>&nbsp 
+  <img src="images/references.png">
+  <a href="#References" onclick="w3_close()" class="buttons">&nbsp References</a>&nbsp
+  <!-- <a href="#References" onclick="w3_close()" class="w3-bar-item w3-button">REFERENCES</a>-->
   
 </nav>
 
@@ -149,7 +168,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- About section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 aboutme" id="about">
+  <div class="w3-container w3-center w3-text-light-grey w3-padding-32 w3-opacity aboutme imagesborder" id="about">
     <h2><b>About Me</b></h2>
     <img src="images/gentleman.png" alt="Avatar" class="w3-circle w3-margin-right" style="width:20%">
     <div class="w3-content w3-justify" style="max-width:600px">
@@ -160,74 +179,14 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Soft Skills section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large softskills" id="Soft_skills">
+  <div class="w3-container w3-light-grey w3-padding-32 w3-text-light-grey w3-padding-large softskills imagesborder" id="Soft_skills">
     <div class="w3-content" style="max-width:100%">
       <h2 class="w3-center"><b>Soft Skills</b></h2>
-      <div class="slideshow-container">
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="images/teamwork.jpg" style="width:100%">
-  <div class="text" style="background-color:rgba(255, 255, 255, 0.5);" >Work Well in a Team Environment</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="images/img_nature_wide.jpg" style="width:100%">
-  <div class="text" style="background-color:rgba(255, 255, 255, 0.5); ">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="images/img_nature_wide.jpg" style="width:100%">
-  <div class="text" style="background-color:rgba(255, 255, 255, 0.5);">Caption Three</div>
-</div>
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-</div>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
-
     </div>
   </div>
 
   <!-- Programming Skills section -->
-  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 programming" id="Programming_Skills">
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32 programming imagesborder" id="Programming_Skills">
     <h2><b>Programming Skills</b></h2>
     <div class="w3-content w3-justify" style="max-width:600px">
       <p class="w3-wide"><b>Java</b></p>
@@ -254,7 +213,7 @@ function showSlides(n) {
   </div>
 
   <!-- Education section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large education w3-opacity-min" id="Education">
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large education w3-opacity imagesborder" id="Education">
     <div class="w3-content w3-text-white" style="max-width:100%">
       <h2 class="w3-center"><b>Education</b></h2>
         <center>
