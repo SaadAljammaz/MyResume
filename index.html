@@ -38,14 +38,32 @@ $(document).ready(function(){
 });
 </script>
 <style>
+
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
-.w3-third img:hover{opacity: 1}
-.buttons{
+.sidebarbuttons{
   font-size: 18px;
+}
+.edubutton{
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black;
+  border-radius: 15px;
+  border: 2px solid #008CBA;
+
+}
+.edubutton:hover {
+    background-color: #008CBA;
+    color: white;
 }
 .eduCard {
   border-radius: 25px;
+}
+.eduCard:hover {
 }
 .imagesborder {
   border-radius: 25px;
@@ -81,7 +99,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   background-size:cover
 }
 .Graduation_project {
-  background-image: url("images/softskills.jpg");
+  background-image: url("images/football.jpg");
   background-repeat: no-repeat;
   background-size:cover
 }
@@ -103,21 +121,21 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <h3 class="w3-padding-64 w3-center w3-text-light-grey"><b>SAAD<br>ALJAMMAZ</b></h3>&nbsp
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <img src="images/icon.png">
-  <a href="#about" onclick="w3_close()" class="buttons">&nbsp About me</a><br>&nbsp
+  <a href="#about" onclick="w3_close()" class="sidebarbuttons">&nbsp About me</a><br>&nbsp
   <img src="images/skills.png">
-  <a href="#Soft_skills" onclick="w3_close()" class="buttons">&nbsp Soft skills</a><br>&nbsp
+  <a href="#Soft_skills" onclick="w3_close()" class="sidebarbuttons">&nbsp Soft skills</a><br>&nbsp
   <img src="images/programming.png"> 
-  <a href="#Programming_Skills" onclick="w3_close()" class="buttons">&nbsp Programming skills</a><br>&nbsp
+  <a href="#Programming_Skills" onclick="w3_close()" class="sidebarbuttons">&nbsp Programming skills</a><br>&nbsp
   <img src="images/Education.png">
-  <a href="#Education" onclick="w3_close()" class="buttons">&nbsp Education</a><br>&nbsp
+  <a href="#Education" onclick="w3_close()" class="sidebarbuttons">&nbsp Education</a><br>&nbsp
   <img src="images/courses.png">
-  <a href="#Courses" onclick="w3_close()" class="buttons">&nbsp Courses</a><br>&nbsp
+  <a href="#Courses" onclick="w3_close()" class="sidebarbuttons">&nbsp Courses</a><br>&nbsp
   <img src="images/references.png">
-  <a href="#Graduation_project" onclick="w3_close()" class="buttons">&nbsp Graduation project</a><br>&nbsp
+  <a href="#Graduation_project" onclick="w3_close()" class="sidebarbuttons">&nbsp Graduation project</a><br>&nbsp
   <img src="images/contact.png">
-  <a href="#contact" onclick="w3_close()" class="buttons">&nbsp Contact</a><br>&nbsp 
+  <a href="#contact" onclick="w3_close()" class="sidebarbuttons">&nbsp Contact</a><br>&nbsp 
   <img src="images/references.png">
-  <a href="#References" onclick="w3_close()" class="buttons">&nbsp References</a><br>&nbsp
+  <a href="#References" onclick="w3_close()" class="sidebarbuttons">&nbsp References</a><br>&nbsp
   <!-- <a href="#References" onclick="w3_close()" class="w3-bar-item w3-button">REFERENCES</a>-->
   
 </nav>
@@ -137,33 +155,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- Push down content on small screens --> 
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
-  <!-- Photo grid -->
-  <!-- <div class="w3-row">
-    <div class="w3-third">
-      <img src="images/FavoriteTeam.png" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-    </div>
-
-    <div class="w3-third">
-      <img src="images/FavoriteTeam.png" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-    </div>
-    
-    <div class="w3-third">
-      <img src="images/FavoriteTeam.png" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-    </div>
-  </div> -->
-
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div> -->
-  
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
@@ -174,12 +165,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- About section -->
-  <div class="w3-container w3-center w3-text-light-grey w3-padding-32 w3-opacity aboutme imagesborder" id="about">
+  <div class="w3-container w3-center w3-text-light-grey w3-padding-32 aboutme imagesborder" id="about">
     <h2><b>About Me</b></h2>
     <img src="images/gentleman.png" alt="Avatar" class="w3-circle w3-margin-right" style="width:20%">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Saad Aljammaz</h4>
-      <p>I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field.
+      <p style="font-size: 20px;">I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field I want to get a strong training program that gives me an excellent opportunity to serve my community and improve my self in my field.
       </p>
     </div>
   </div>
@@ -219,27 +210,40 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Education section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large education w3-opacity imagesborder" id="Education">
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large education imagesborder" id="Education">
     <div class="w3-content w3-text-white" style="max-width:100%">
       <h2 class="w3-center"><b>Education</b></h2>
-        <center>
-          <div class="w3-card-4 w3-margin w3-light-grey eduCard" style="width:300px">
-          <div class="w3-display-container w3-text-white">
-            <img src="images/KSU_Logo.png" alt="Lights" style="width:100%">
+      <CENTER>
+      <table>
+        <td>
+          <div>
+            <center>
+              <div class="w3-card-4 w3-margin w3-light-grey eduCard" style="width:300px">
+              <div class="w3-display-container w3-text-white">
+                <img src="images/KSU_Logo.png" alt="Lights" style="width:100%">
+              </div>
+              <div class="w3-row">
+                <div class="w3-center">
+                  <h3>King Saud University</h3>
+                  <h6>Bachelor</h6>
+                  <p class="w3-margin w3-center">computer science student at King Saud University. Currently, in the last semester in college with GPA *.** out of 5</p>
+                </div>
+              </div>
+              </div>
+            </center>
           </div>
-          <div class="w3-row">
-            <div class="w3-center">
-              <h3>King Saud University</h3>
-              <h6>Bachelor</h6>
-              <p class="w3-margin w3-center">computer science student at King Saud University. Currently, in the last semester in college with GPA *.** out of 5</p>
-            </div>
-          </div>
-          </div>
+        </td>
+        <td width="500">
+          <center>
           <h1>
-            <a href="" class="typewrite w3-text-grey" data-period="2000" data-type='[ "Hi, Im Saad.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'><span class="wrap"></span>
+            <a href="" class="typewrite w3-text-white" data-period="2000" data-type='[ "Hi, Im Saad.", "Through my career at the university I have been through a lot of assignments and projects", "Are you interested in taking a quick look at the things that I have done?", "I Love to Develop." ]'><span class="wrap"></span>
             </a>
           </h1>
-        </center>
+          </center>
+          <button class="edubutton">Check what I did here</button>
+        </td>
+      </table>
+      </CENTER>
     </div>
   </div>
 
@@ -289,7 +293,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   </div>
 
   <!-- Graduation Project section -->
-  <div class="w3-container w3-light-grey w3-padding-32 w3-text-light-grey w3-padding-large Graduation_project imagesborder" id="Graduation_project">
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large Graduation_project imagesborder" id="Graduation_project">
     <div class="w3-content" style="max-width:600px">
       <h2 class="w3-center"><b>Graduation Project</b></h2>
       <center>
@@ -358,45 +362,6 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <!-- <footer class="w3-container w3-padding-32 w3-grey">  
-    <div class="w3-row-padding">
-      <div class="w3-third">
-        <h3>INFO</h3>
-        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
-      </div>
-    
-      <div class="w3-third">
-        <h3>BLOG POSTS</h3>
-        <ul class="w3-ul">
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Lorem</span><br>
-            <span>Sed mattis nunc</span>
-          </li>
-          <li class="w3-padding-16 w3-hover-black">
-            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">Ipsum</span><br>
-            <span>Praes tinci sed</span>
-          </li> 
-        </ul>
-      </div>
-
-      <div class="w3-third">
-        <h3>POPULAR TAGS</h3>
-        <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
-        </p>
-      </div>
-    </div>
-  </footer> -->
-  
- <!--<div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div> -->
 
 <!-- End page content -->
 </div>
