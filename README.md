@@ -1,4 +1,3 @@
 # MyResume
 
-Click here to see the Resume
-[a link](https://rawgit.com/SaadAljammaz/MyResume/master/index.html)
+[Click here to see the Resume](https://rawgit.com/SaadAljammaz/MyResume/master/index.html)
